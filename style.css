@@ -143,11 +143,49 @@ nav ul li:hover {
   line-height: 18px;
   padding: 8px 16px;
   margin-top: 32px;
+  text-transform: uppercase;
 }
 #offers {
   background-image: url("images/offers-bg.png");
   width: 100%;
   height: 483px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#offers #offerWrap {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+#offers #offerWrap .offerCard {
+  width: 186px;
+  height: 293px;
+  background: white;
+  box-shadow: 4px 4px 0px #5792d0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #686667;
+}
+#offers #offerWrap .offerCard svg {
+  margin: 32px 0;
+}
+#offers #offerWrap .offerCard p {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 #marquee {
   width: 1200px;
