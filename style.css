@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(50% 50% at 50% 50%, #9ec3e5 0%, #5792d0 100%);
+}
+#container {
+  max-width: 1200px;
+  width: 1200px;
+  background: white;
+}
+#kmhLogo {
+  width: 202px;
+  height: 135px;
+}
+#header {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #cecac9;
+}
+#location {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #636162;
+}
+#contact {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: right;
+  color: #636162;
+}
+#contact span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+#contact img {
+  margin-top: 8px;
+}
+nav {
+  width: 100%;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  background: #cecac9;
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  cursor: default;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #686667;
+}
+nav ul li:hover {
+  cursor: pointer;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90.05deg,
+    #cecac9 0%,
+    #cecac9 0%,
+    #9a9a9a 45.31%,
+    #cecac9 100%
+  );
+}
+#featured_items {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #686667;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+#items {
+  margin-top: 24px;
+}
+#items img {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+#offers {
+  background-image: url("images/offers-bg.png");
+  width: 100%;
+  height: 483px;
+}
+#marquee {
+  width: 1200px;
+  line-height: 32px;
+  font-size: 24px;
+  background-color: #d8e537;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
